@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <div class="container">
+        <form action="#">
+            <div class="title"><h1>R</h1>egisteration</div>
+            <div class="user-data">
+                <div class="box">
+                    <span><label for="fname" class="box -desc">Full Name</label></span>
+                    <input type="text" id="input-box" name="fname" placeholder="Enter your Full name" required>
+                </div>
+    
+                <div class="box">
+                    <span><label for="fname" class="box -desc"> Last Name</label></span>
+                    <input type="text" id="input-box" name="lname" placeholder="Enter your Last name" required>
+                </div>
+    
+                <div class="box">
+                    <span><label for="email" class="box -desc">Email:</label></span>
+                    <input type="email" id="input-box" name="email" placeholder="your gmail ID" required>
+                </div>
+                <div class="box">
+                    <label for="phone number" class="box -desc">Phone Number</label>
+                    <input type="number" name="phone-number" id="input-box" placeholder="+91" required>
+                </div>
+            </div>
+
+            <div class="user-gender">
+                <label for="gender" name="gender">Male</label>
+                <input type="radio" name="gender" value="male" required>
+
+                <label for="gender" name="gender">Female</label>
+                <input type="radio" name="gender" value="female" required>
+
+                <span><label for="gender">Other</label></span>
+                <input type="radio" name="gender" value="other" required>
+            </div>
+
+         <div class="DOBorTAA">
+            <div class="user-DOB">
+                <label for="birthday">Date Of Birth</label>
+                <input type="date" id="input-box" name="birthday" required>
+            </div>
+            <div class="TAA">
+                <input type="checkbox" name="check" required>
+                <label for="check">I agree to all the terms and conditions</label>
+            </div>
+         </div>
+  
+        
+
+
+         <div class="sumit">
+            <button>SUBMIT</button>
+          </div>
+
+        </form>
+    </div>
+
+</body>
+
+</html>
