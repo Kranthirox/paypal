@@ -4,6 +4,7 @@ html body{
     box-sizing: border-box;
 }
 .container{
+    display: flex   ;
 padding: 5% 20%;
 width: 100%;
 
