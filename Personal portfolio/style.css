@@ -91,6 +91,9 @@ table {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
+  min-width: -webkit-max-content;
+  min-width: -moz-max-content;
+  min-width: max-content;
 }
 
 .container header .section-heading {

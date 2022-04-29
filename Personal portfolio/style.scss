@@ -28,6 +28,7 @@ $primary-color: #e4e4e4;
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    min-width:max-content ;
 
     .section-heading {
       @include big-text(48px);
