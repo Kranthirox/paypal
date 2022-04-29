@@ -1,0 +1,23 @@
+@mixin big-text($size) {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: $size;
+  line-height: $size * 1.3;
+}
+
+@mixin open-sans($size, $weight:normal) {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight:  $weight;
+  font-size: $size;
+  line-height: $size * 1.3;
+}
+@mixin work-box($color) {
+    width: 390px;
+    height: 400px;
+    background: $color;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 12px;
+    margin: 20px 30px;
+  }
