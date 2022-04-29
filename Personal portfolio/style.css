@@ -176,7 +176,7 @@ table {
 }
 
 .container .skills .skill-image {
-  min-width: 50%;
+  min-width: 520px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
