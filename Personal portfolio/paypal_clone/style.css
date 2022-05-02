@@ -1,0 +1,495 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&family=Open+Sans:ital,wght@0,300;1,400&display=swap');
+
+body {
+
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    position: fixed;
+    
+}
+.nav{
+    flex: 3;
+    padding: 0.8% 0% ;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    background-color: #ffffff;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+width: 140px;
+height: 45px;
+margin-left: 100%;
+}
+
+.nav-context {
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+.nav-context a{
+    padding: 0% 2%;
+    margin-left: 3%;
+    font-family: 'Open Sans', sans-serif ;
+    text-decoration: none;
+    font-weight: 700;
+    color: black;
+    position: relative;
+}
+.nav-context a::after {   
+ 
+    background: transparent ;
+    bottom: -25px;
+    content: " ";
+    display: block;
+    height: 5px;    
+    left: 50%;
+    right: 50%;
+    position: absolute;
+    background: rgb(48, 92, 239);
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0 ;
+  }
+  .nav-context a:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
+.AwBtn{
+    width: 18px;
+    height: 18px;
+    transition: all 0.4s ease;
+}
+.AwBtn:hover {
+    transform: rotateZ(-180deg);
+  }
+.Log-Side{
+ 
+width: 12%; 
+}
+
+.Log-Side a{
+    padding: 5% 8%;
+    border-radius: 25px ;
+    border: 1px solid rgb(23, 100, 255);
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+}
+.Log-Side :last-child{
+    background-color: #195eb3;
+    color: #f5f7fa ;
+}
+
+
+.Banner {
+    padding: 3%;
+    height: 60%;
+    width: 100%;
+    background-color: #3fa6e4;
+
+}
+
+.Banner h1 {
+    padding: 100px;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 45px;
+    text-align: center;
+    padding: 20px 280px;
+}
+
+.promo-Signup {
+    display: flex;
+    justify-content: center;
+
+}
+
+.promo-Signup a {
+    text-decoration: none;
+    background-color: #ffffff;
+    padding: 15px 120px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 900;
+    font-size: 15px;
+    border-radius: 25px;
+    color: #222D65;
+}
+
+.Ad {
+    margin: 0%;
+}
+
+.Ad img {
+    object-fit: contain;
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 0px;
+}
+
+.sign-Buss {
+    background-color: #222D65;
+    height: 120px;
+}
+
+.sign-Buss h1 {
+    margin: 0%;
+    padding: 10px 8%;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.sign-Buss a {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    background-color: #ffffff;
+    padding: 15px 120px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    border-radius: 25px;
+    color: #222D65;
+}
+
+.shopping {
+    display: flex;
+    flex-direction: row;
+    flex: 2;
+}
+
+.shopping-Context {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 50px 150px;
+}
+
+.shopping h1 {
+    color: #11a4e3;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 40px;
+
+}
+
+.shopping p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.shopping img {
+    width: 500px;
+}
+
+.shopBtn {
+    margin-top: 20px;
+}
+
+.shopBtn a {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    padding: 10px 120px;
+    border: #11a4e3 solid 1px;
+    border-radius: 25px;
+    text-decoration: none;
+    color: #222D65;
+
+}
+
+.app-Ad {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    flex: 2;
+    background-color: rgb(228, 225, 225);
+}
+
+.app-Ad h1 {
+    font-size: 40px;
+    font-family: 'Open Sans', sans-serif;
+    color: #11a4e3;
+    padding-left: 50px;
+}
+
+.app-Ad p {
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 50px;
+    padding: 20px 50px;
+}
+
+.app-Ad a {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    padding: 10px 50px;
+    font-weight: 700;
+    color: #222D65;
+    border: #11a4e3 solid 1px;
+    border-radius: 25px;
+    text-decoration: none;
+    color: #222D65;
+    background-color: #ffffff;
+    margin-left: 50px;
+
+}
+
+.Gif {
+
+    margin: 50px 100px;
+
+}
+
+.items {
+    display: flex;
+    display: flex;
+    flex-direction: row;
+    flex: 2;
+    background-color: rgb(255, 255, 255);
+}
+
+.items h1 {
+    font-size: 40px;
+    font-family: 'Open Sans', sans-serif;
+    color: #11a4e3;
+    margin-left: 150px;
+}
+
+.items p {
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 50px;
+    margin-left: 150px;
+
+}
+
+.items a {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    padding: 10px 150px;
+    font-weight: 700;
+    color: #222D65;
+    border: #11a4e3 solid 1px;
+    border-radius: 25px;
+    text-decoration: none;
+    color: #222D65;
+    background-color: #ffffff;
+    margin-left: 150px;
+
+}
+
+.Gif {
+    margin: 50px 100px;
+
+}
+
+.pay {
+    display: flex;
+    display: flex;
+    flex-direction: row;
+    flex: 2;
+    background-color: rgb(255, 255, 255);
+}
+
+.pay h1 {
+    font-size: 40px;
+    font-family: 'Open Sans', sans-serif;
+    color: #11a4e3;
+    margin-left: 150px;
+}
+
+.pay p {
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 50px;
+    margin-left: 150px;
+
+}
+
+.pay a {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    padding: 10px 50px;
+    font-weight: 700;
+    color: #222D65;
+    border: #11a4e3 solid 1px;
+    border-radius: 25px;
+    text-decoration: none;
+    color: #222D65;
+    background-color: #ffffff;
+    margin-left: 150px;
+
+}
+
+.pay img {
+    width: 310px;
+    height: 100%;
+    padding: 0px 80px;
+
+}
+
+
+.shop-Online {
+    display: flex;
+    display: flex;
+    flex-direction: row;
+    flex: 2;
+    background-color: rgb(255, 255, 255);
+}
+
+.shop-Online h1 {
+    font-size: 40px;
+    font-family: 'Open Sans', sans-serif;
+    color: #11a4e3;
+    margin-left: 150px;
+}
+
+.shop-Online p {
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 50px;
+    margin-left: 150px;
+
+}
+
+.shop-Online a {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    padding: 10px 150px;
+    font-weight: 700;
+    color: #222D65;
+    border: #11a4e3 solid 1px;
+    border-radius: 25px;
+    text-decoration: none;
+    color: #222D65;
+    background-color: #ffffff;
+    margin-left: 150px;
+
+}
+
+.shop-Online img {
+    width: 350px;
+    height: 350px;
+    padding: 0px 80px;
+
+}
+
+.patners {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 20%;
+    background-color: #f5f7fa;
+}
+
+.patners h1 {
+    margin: 50px;
+    color: #11a4e3;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 35px;
+    text-align: center;
+    font-weight: 700;
+
+}
+
+.logos {
+    margin: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.patners img {
+    width: 30%;
+    height: 30%;
+}
+
+.signup-counter {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 5% 10%;
+    background-color: #11a4e3;
+}
+
+.signup-counter h1 {
+    color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 35px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.signup-counter a {
+    text-decoration: none;
+    background-color: #ffffff;
+    padding: 15px 120px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 900;
+    font-size: 15px;
+    border-radius: 25px;
+    color: #222D65;
+}
+
+.counter p {
+    margin: 30px 30px;
+    background-color: #ffffff;
+}
+
+.TAC {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 150px;
+    padding-bottom: 100px;
+    justify-content: flex-start;
+
+}
+
+.TAC p {
+    width: 80%;
+    margin: 0;
+    padding: 5px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bolder;
+    font-weight: lighter;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 70px;
+    row-gap: 15px;
+    border-bottom: solid black 1px;
+}
+
+.footer a {
+    margin: 5px;
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+}
+
+.footer img {
+    width: 32px;
+    height: 32px;
+}
+
+.footer2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 5px;
+    row-gap: 15px;
+}
+
+.footer2 a {
+    margin: 5px;
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+}
+
+.footer-sub p {
+    font-size: 12px;
+    margin: 0;
+    padding-right: 50px;
+}
