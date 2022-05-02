@@ -86,9 +86,6 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
 }
 
 .container header {
@@ -244,10 +241,10 @@ a {
 .zoom {
   margin: 5px;
   background-color: green;
-  -webkit-transition: -webkit-transform .2s;
-  transition: -webkit-transform .2s;
-  transition: transform .2s;
-  transition: transform .2s, -webkit-transform .2s;
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
   /* Animation */
   width: 390px;
   height: 400px;
@@ -393,7 +390,7 @@ a {
 }
 
 .footer-container .footer-left h6 {
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   text-decoration: underline;
   text-align: left;
   color: #606060;
@@ -402,7 +399,104 @@ a {
 }
 
 .footer-container .footer-left p {
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   color: #606060;
   font-size: small;
 }
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 100%;
+    display: block;
+  }
+  .container .inner-container {
+    margin: 0;
+    padding: 0px 10px;
+  }
+  .container header {
+    background-color: #f4f4f4;
+    margin: 0px;
+    margin: 0px -10px;
+  }
+  .container header .section-heading {
+    font-family: "Playfair Display";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 2.6rem;
+    text-align: center;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    max-width: 100%;
+  }
+  .container header .socials {
+    display: none;
+  }
+  .container .hero {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container .hero .info .section-heading {
+    text-align: center;
+    padding-bottom: 16px;
+  }
+  .container .hero .info p {
+    margin: 0;
+    text-align: center;
+  }
+  .container .skills {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .container .skills .skills-text .section-heading {
+    text-align: center !important;
+    margin: 15px;
+    padding: 0;
+  }
+  .container .skills .skill-image img {
+    min-width: auto;
+    max-width: 100%;
+  }
+  .container .Hero .work-text p {
+    text-align: center;
+    padding: 0;
+  }
+  .container .Hero .zoom {
+    margin: 10px 0;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .socials {
+    display: none;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .example {
+    background: blue;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .example {
+    background: orange;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .example {
+    background: pink;
+  }
+}
+/*# sourceMappingURL=style.css.map */
