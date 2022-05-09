@@ -247,7 +247,7 @@ a {
 }
 
 .zoom {
-  margin: 5px;
+  margin: 10px;
   background-color: green;
   -webkit-transition: -webkit-transform 0.2s;
   transition: -webkit-transform 0.2s;
