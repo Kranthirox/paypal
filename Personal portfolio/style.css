@@ -110,8 +110,9 @@ a {
 }
 
 .container header .socials {
-  width: auto;
+  width: 200px;
   height: 50px;
+  padding: 0%;
   border: 4px solid #e4e4e4;
   border-radius: 12px;
   display: -webkit-box;
@@ -129,8 +130,8 @@ a {
 }
 
 .container header .socials img {
-  width: 15%;
-  height: auto;
+  width: 32px;
+  height: 32px;
 }
 
 .container .hero {
@@ -147,6 +148,10 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.container .hero .mini-socials {
+  display: none;
 }
 
 .container .hero .avatar {
@@ -264,7 +269,7 @@ a {
   -webkit-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   border-radius: 12px;
-  margin: 20px 30px;
+  margin: 30px 30px;
 }
 
 .work-box-blue {
@@ -274,7 +279,7 @@ a {
   -webkit-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   border-radius: 12px;
-  margin: 20px 30px;
+  margin: 30px 30px;
 }
 
 .work-box-red {
@@ -284,7 +289,7 @@ a {
   -webkit-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   border-radius: 12px;
-  margin: 20px 30px;
+  margin: 30px 30px;
 }
 
 .work-box-green {
@@ -294,7 +299,7 @@ a {
   -webkit-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   border-radius: 12px;
-  margin: 20px 30px;
+  margin: 30px 30px;
 }
 
 .work-box-yellow {
@@ -304,7 +309,7 @@ a {
   -webkit-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   border-radius: 12px;
-  margin: 20px 30px;
+  margin: 30px 30px;
 }
 
 .work-box-purple {
@@ -314,7 +319,7 @@ a {
   -webkit-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   border-radius: 12px;
-  margin: 20px 30px;
+  margin: 30px 30px;
 }
 
 .inner-box {
@@ -406,6 +411,9 @@ a {
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+  .hero-running {
+    text-align: center;
+  }
   .container {
     width: 100%;
     display: block;
@@ -435,10 +443,36 @@ a {
     display: none;
   }
   .container .hero {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 0;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .container .hero .mini-socials {
+    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 5px 0;
+  }
+  .container .hero .mini-socials img {
+    margin: 10px;
+    width: 28px;
+    height: 28px;
+  }
+  .container .hero .mini-socials a {
+    text-decoration: none;
+  }
+  .container .hero .socials {
+    display: none;
+    padding: 0%;
   }
   .container .hero .info .section-heading {
     text-align: center;
@@ -463,6 +497,9 @@ a {
     min-width: auto;
     max-width: 100%;
   }
+  .container .Hero .work-text .avatar img {
+    width: 100%;
+  }
   .container .Hero .work-text p {
     text-align: center;
     padding: 0;
@@ -470,33 +507,44 @@ a {
   .container .Hero .zoom {
     margin: 10px 0;
   }
+  /* Small devices (portrait tablets and large phones, 600px and up) */
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
+@media only screen and (max-width: 600px) and (min-width: 600px) {
   .socials {
+    display: block;
+  }
+  .mini-socials {
     display: none;
   }
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-  .example {
-    background: blue;
+@media only screen and (max-width: 600px) {
+  /* Medium devices (landscape tablets, 768px and up) */
+}
+
+@media only screen and (max-width: 600px) and (min-width: 768px) {
+  .mini-socials {
+    display: none;
   }
 }
 
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-  .example {
-    background: orange;
+@media only screen and (max-width: 600px) {
+  /* Large devices (laptops/desktops, 992px and up) */
+}
+
+@media only screen and (max-width: 600px) and (min-width: 992px) {
+  .mini-socials {
+    display: none;
   }
 }
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-  .example {
-    background: pink;
+@media only screen and (max-width: 600px) {
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+}
+
+@media only screen and (max-width: 600px) and (min-width: 1200px) {
+  .mini-socials {
+    display: none;
   }
 }
-/*# sourceMappingURL=style.css.map */
