@@ -1,0 +1,155 @@
+@import "reset.scss";
+@import "responsive.scss";
+
+$primary-color: #e4e4e4;
+
+.container-margin {
+  margin: 40px 50px;
+}
+.sm-margin {
+  margin: 2%;
+}
+.container-padding {
+  padding: 10px 15px;
+}
+.context-margin {
+  margin: 50px 200px;
+}
+
+.container {
+  margin: 0%;
+  padding: 0 20%;
+
+  background: #fff59d;
+
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  .up-inner-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .title {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      img {
+        width: 62px;
+        height: 62px;
+      }
+      span {
+        margin-left: 5px;
+        font-size: 28px;
+      }
+    }
+    .input-box {
+      display: flex;
+      flex: 3;
+      justify-content: space-between;
+      align-items: center;
+
+      border: 2px solid #b0bbc1;
+      border-radius: 10px;
+      background-color: white;
+
+      width: 760px;
+      
+      height: 50px;
+
+      .note-input {
+        width: 600px;
+        
+        min-width: 20%;
+        height: 40px;
+        padding: 0 10px;
+        border: unset;
+        background: transparent;
+        font-size: 18px;
+      }
+      .add-container {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+
+        margin: 10px;
+        padding: 10px 20px;
+        border-radius: 30px;
+        background-color: #76df29;
+        border: #b0bbc1 2px;
+        img {
+          width: 22px;
+          height: 20px;
+        }
+        span {
+          font-size: 18px;
+        }
+      }
+      .add-container:hover {
+        background-color: #c3f8bb;
+      }
+    }
+  }
+  .content-container {
+    display: flex;
+
+   
+    width: 765px;
+    height: 450px;
+
+    margin: 20px 0;
+    padding: 10px;
+
+    border-radius: 10px;
+    background-color: #fdfefe;
+    border: #bebebe 1px solid;
+    box-shadow: 0px 0px 10px rgb(196, 196, 196);
+    .note-list::-webkit-scrollbar {
+      display: none; /* for Chrome, Safari, and Opera */
+    }
+    .note-list {
+      display: flex;
+      overflow: scroll;
+      ul li:hover {
+        background: #ddd;
+      }
+      ul {
+        li {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          width: 710px;
+          font-size: 18px;
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+           
+         
+
+          margin: 20px 10px;
+          padding: 10px 20px;
+          background-color: #d0d0d0;
+          border-radius: 10px;
+
+          button {
+            border: unset;
+            width: 32px;
+            height: 32px;
+            background-color: red;
+            border-radius: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+           }
+        
+        }
+      }
+    }
+  }
+}
+
+
+
