@@ -118,8 +118,9 @@ $primary-color: #e4e4e4;
     .note-list {
       display: flex;
       overflow: scroll;
+      
       width: 100%;
-      max-width: 250px;
+      max-width: 700px;
       ul li:hover {
         background: #ddd;
       }
@@ -128,7 +129,7 @@ $primary-color: #e4e4e4;
           display: flex;
           justify-content: space-between;
           align-items: center;
-          width: 100%;
+          width: 87%;
           max-width: 710px;
           font-size: 18px;
           font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;

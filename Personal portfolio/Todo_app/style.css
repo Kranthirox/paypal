@@ -225,7 +225,7 @@ table {
   display: flex;
   overflow: scroll;
   width: 100%;
-  max-width: 250px;
+  max-width: 700px;
 }
 
 .container .content-container .note-list ul li:hover {
@@ -242,7 +242,7 @@ table {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100%;
+  width: 87%;
   max-width: 710px;
   font-size: 18px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
