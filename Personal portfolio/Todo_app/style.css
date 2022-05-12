@@ -245,10 +245,11 @@ body {
 
 .container .content-container .note-list ul li button {
   border: unset;
-  width: 32px;
-  height: 32px;
+  width: 28px;
+  height: 28px;
   margin: 0 10px;
-  border-radius: 30px;
+  border-radius: 35px;
+  background-color: red;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
