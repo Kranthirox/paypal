@@ -53,12 +53,11 @@ table {
 }
 
 @media only screen and (max-width: 600px) {
-  .container .input-box {
-    width: 200px;
-    height: 70px;
+  .container {
+    width: 400px;
   }
-  .container .input-box .note-input {
-    width: 200px;
+  .container .up-inner-container {
+    width: 400px;
   }
 }
 
@@ -79,7 +78,8 @@ table {
 }
 
 .container {
-  margin: 0%;
+  width: 60%;
+  height: 850px;
   padding: 0 20%;
   background: #fff59d;
   display: -webkit-box;
@@ -113,6 +113,7 @@ table {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 100%;
 }
 
 .container .up-inner-container .title {
@@ -142,9 +143,6 @@ table {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: 3;
-      -ms-flex: 3;
-          flex: 3;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -154,7 +152,8 @@ table {
   border: 2px solid #b0bbc1;
   border-radius: 10px;
   background-color: white;
-  width: 760px;
+  width: 92%;
+  max-width: 755px;
   height: 50px;
 }
 
@@ -203,7 +202,8 @@ table {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 765px;
+  width: 93%;
+  max-width: 755px;
   height: 450px;
   margin: 20px 0;
   padding: 10px;
@@ -224,6 +224,8 @@ table {
   display: -ms-flexbox;
   display: flex;
   overflow: scroll;
+  width: 100%;
+  max-width: 250px;
 }
 
 .container .content-container .note-list ul li:hover {
@@ -240,7 +242,8 @@ table {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 710px;
+  width: 100%;
+  max-width: 710px;
   font-size: 18px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 20px 10px;

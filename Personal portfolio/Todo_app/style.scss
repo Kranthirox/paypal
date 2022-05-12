@@ -17,7 +17,8 @@ $primary-color: #e4e4e4;
 }
 
 .container {
-  margin: 0%;
+  width: 60%;
+  height: 850px;
   padding: 0 20%;
 
   background: #fff59d;
@@ -32,6 +33,7 @@ $primary-color: #e4e4e4;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
 
     .title {
       display: flex;
@@ -49,7 +51,7 @@ $primary-color: #e4e4e4;
     }
     .input-box {
       display: flex;
-      flex: 3;
+      
       justify-content: space-between;
       align-items: center;
 
@@ -57,7 +59,8 @@ $primary-color: #e4e4e4;
       border-radius: 10px;
       background-color: white;
 
-      width: 760px;
+      width: 92%;
+      max-width: 755px;
       
       height: 50px;
 
@@ -98,7 +101,8 @@ $primary-color: #e4e4e4;
     display: flex;
 
    
-    width: 765px;
+    width: 93%;
+    max-width: 755px;
     height: 450px;
 
     margin: 20px 0;
@@ -114,6 +118,8 @@ $primary-color: #e4e4e4;
     .note-list {
       display: flex;
       overflow: scroll;
+      width: 100%;
+      max-width: 250px;
       ul li:hover {
         background: #ddd;
       }
@@ -122,7 +128,8 @@ $primary-color: #e4e4e4;
           display: flex;
           justify-content: space-between;
           align-items: center;
-          width: 710px;
+          width: 100%;
+          max-width: 710px;
           font-size: 18px;
           font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
            
