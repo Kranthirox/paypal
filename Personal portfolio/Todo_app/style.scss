@@ -3,22 +3,10 @@
 
 $primary-color: #e4e4e4;
 
-.container-margin {
-  margin: 40px 50px;
-}
-.sm-margin {
-  margin: 2%;
-}
-.container-padding {
-  padding: 10px 15px;
-}
-.context-margin {
-  margin: 20px 200px;
-}
 
 .container {
   width: 63%;
-  height: 850px;
+  height: 700px;
   padding: 0 20%;
 
   background: #fff59d;
@@ -51,7 +39,7 @@ $primary-color: #e4e4e4;
     }
     .input-box {
       display: flex;
-      
+      padding: 0 10px;
       justify-content: space-between;
       align-items: center;
 
@@ -59,17 +47,18 @@ $primary-color: #e4e4e4;
       border-radius: 10px;
       background-color: white;
 
-      width: 92%;
-      max-width: 755px;
+      width: 100%;
+      max-width: 700px;
       
       height: 50px;
 
       .note-input {
         width: 600px;
         
+        
         min-width: 20%;
         height: 40px;
-        padding: 0 10px;
+      
         border: unset;
         background: transparent;
         font-size: 18px;
@@ -102,7 +91,7 @@ $primary-color: #e4e4e4;
 
    
     width: 100%;
-    max-width: 755px;
+    max-width: 700px;
     height: 450px;
 
     margin: 20px 0;
@@ -123,29 +112,35 @@ $primary-color: #e4e4e4;
       max-width: 700px;
       ul li:hover {
         background: #ddd;
+        
       }
       ul {
+        width: 100%;
+        max-width: 690px;
+        height: 100%;
         li {
           display: flex;
           justify-content: space-between;
           align-items: center;
-          width: 87%;
-          max-width: 710px;
+          justify-items: stretch;
+          
+          
+         
           font-size: 18px;
           font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
            
-         overflow: hidden;
-
-          margin: 20px 10px;
+         
+        
+          
           padding: 10px 20px;
-          background-color: #d0d0d0;
+          
           border-radius: 10px;
 
           button {
             border: unset;
             width: 32px;
             height: 32px;
-            background-color: red;
+           margin: 0 10px;
             border-radius: 30px;
             display: flex;
             align-items: center;
