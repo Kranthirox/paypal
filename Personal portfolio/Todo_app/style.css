@@ -74,11 +74,11 @@ table {
 }
 
 .context-margin {
-  margin: 50px 200px;
+  margin: 20px 200px;
 }
 
 .container {
-  width: 60%;
+  width: 63%;
   height: 850px;
   padding: 0 20%;
   background: #fff59d;
@@ -202,7 +202,7 @@ table {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 93%;
+  width: 100%;
   max-width: 755px;
   height: 450px;
   margin: 20px 0;
