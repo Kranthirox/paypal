@@ -246,6 +246,7 @@ table {
   max-width: 710px;
   font-size: 18px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  overflow: hidden;
   margin: 20px 10px;
   padding: 10px 20px;
   background-color: #d0d0d0;
