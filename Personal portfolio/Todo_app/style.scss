@@ -118,17 +118,19 @@ body{
         background: #ddd;
         
       }
+      ul::-webkit-scrollbar {
+        display: none; /* for Chrome, Safari, and Opera */
+      }
       ul {
-        width: 100%;
-        max-width: 690px;
-        height: 100%;
+        width: inherit;
+       overflow: scroll;
         li {
           display: flex;
           justify-content: space-between;
           align-items: center;
           justify-items: stretch;
           
-          
+    
          
           font-size: 18px;
           font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;

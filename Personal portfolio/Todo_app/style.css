@@ -220,10 +220,14 @@ body {
   background: #ddd;
 }
 
+.container .content-container .note-list ul::-webkit-scrollbar {
+  display: none;
+  /* for Chrome, Safari, and Opera */
+}
+
 .container .content-container .note-list ul {
-  width: 100%;
-  max-width: 690px;
-  height: 100%;
+  width: inherit;
+  overflow: scroll;
 }
 
 .container .content-container .note-list ul li {
