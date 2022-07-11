@@ -143,9 +143,15 @@ table {
   width: 28%;
   height: 40px;
   border-radius: 10px;
+  -webkit-transition: -webkit-transform .1s;
+  transition: -webkit-transform .1s;
+  transition: transform .1s;
+  transition: transform .1s, -webkit-transform .1s;
 }
 
 .container header .nav .search-container .searchbtn:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
   background-color: #f9f9f9;
   color: #032167;
 }
@@ -190,7 +196,7 @@ table {
   cursor: pointer;
 }
 
-.container .tags .tag:hover {
+.container .tags .tag:hover, .container .tags .tag:focus, .container .tags .tag::after {
   background-color: #05339c;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
